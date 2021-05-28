@@ -1,0 +1,10 @@
+syntax =  'proto3';
+
+import "chapter-2/city_package.proto";
+
+package street;
+
+message Street {
+  city.City city = 1;
+  string street_name = 2;
+}
