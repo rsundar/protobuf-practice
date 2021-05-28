@@ -1,3 +1,5 @@
+package date;
+
 syntax = 'proto3';
 
 message Date {
