@@ -1,5 +1,7 @@
 syntax = 'proto3';
 
+import "chapter-2/date.proto"; // use fully qualified path to avoid errors.
+
 message Person {
   int32 age = 1;
   string first_name = 2;
@@ -20,10 +22,4 @@ message Person {
 
   EyeColor eye_color = 8;
   Date birthdate = 9;
-}
-
-message Date {
-  int32 year = 1;
-  int32 month = 2;
-  int32 day = 3;
 }
